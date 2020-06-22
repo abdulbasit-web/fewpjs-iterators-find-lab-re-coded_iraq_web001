@@ -1,3 +1,11 @@
+// const testVar = {};
+
+// function testFunc() {
+//   return 'hi';
+// }
+
+// console.log(testFunc());
+
 const record = [
   { year: '2018', result: 'N/A' },
   { year: '2017', result: 'N/A' },
@@ -62,4 +70,8 @@ const record = [
 
 function superbowlWin(record) {
   let game = record.find(ele => ele.year == 1969);
+  if (game.result == 'W') return game.year;
+  return undefined;
 }
+
+console.log(superbowlWin(record));
